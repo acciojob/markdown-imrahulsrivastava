@@ -7,9 +7,9 @@ function App() {
 
   const handleChange = (e) => setValue(e.target.value);
 
-  const MarkdownPreview = () => <p>{value}</p>;
+  const MarkdownPreview = () => <h1>{value}</h1>;
 
-  const Loading = () => <p className="loading">Loading ...</p>;
+  const Loading = () => <h1 className="loading">Loading ...</h1>;
 
   useEffect(() => {
     setLoading(true);
