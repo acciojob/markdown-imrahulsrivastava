@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Markdown from "markdown-to-jsx";
 import "../styles/App.css";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   const handleChange = (e) => setValue(e.target.value);
 
-  const MarkdownPreview = () => <h1>{value}</h1>;
+  const MarkdownPreview = () => <Markdown>{value}</Markdown>;
 
   const Loading = () => <h1 className="loading">Loading ...</h1>;
 
