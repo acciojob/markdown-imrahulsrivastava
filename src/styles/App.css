@@ -1,12 +1,29 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.app {
+  display: flex;
+  height: 100vh;
+
+  .textarea,
+  .preview {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+  }
+
+  .textarea {
+    resize: none;
+    background-color: #eff1f5;
+  }
+
+  .preview {
+    overflow-y: auto;
+    background-color: #e8eaf1;
+  }
 }
